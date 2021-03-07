@@ -1,5 +1,0 @@
-{
-  "lint-staged": {
-    "*.{ts, tsx}": ["yarn eslint --ext .tsx,.ts ./src --fix","yarn test --bail"]
-  }
-}
