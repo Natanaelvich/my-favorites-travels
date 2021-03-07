@@ -12,6 +12,7 @@ export default function Home() {
         shouldExcludeTitleSuffix={false}
       />
       <h1>inicio</h1>
+      <h2>Test</h2>
     </Container>
   );
 }
