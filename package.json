@@ -9,9 +9,14 @@
     "prepare": "husky install",
     "test": "jest --env=jest-environment-jsdom-sixteen"
   },
+  "husky" : {
+    "hooks" : {
+      "pre-push" : "lint-staged"
+    }
+  },
   "lint-staged": {
     "src/**/*": [
-      "yarn eslint --ext .tsx,.ts ./src --fix"
+      "yarn eslint --ext .tsx,.ts ./src --fix", "yarn test --bail"
     ]
   },
   "dependencies": {
