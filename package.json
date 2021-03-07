@@ -16,7 +16,6 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn eslint --ext .tsx,.ts --fix",
       "yarn test --findRelatedTests --bail"
     ]
   },
