@@ -11,11 +11,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn eslint --ext .tsx,.ts ./src"
+      "pre-push": "lint-staged"
     }
   },
   "lint-staged": {
-    "src/**/*": [
+    "./**/*": [
       "yarn test --findRelatedTests --bail",
       "yarn eslint --ext .tsx,.ts ./src"
     ]
