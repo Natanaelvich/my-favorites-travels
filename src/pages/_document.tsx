@@ -43,6 +43,8 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap"
             rel="stylesheet"
           />
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="theme-color" content="#7159c1" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
