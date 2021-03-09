@@ -11,7 +11,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "lint-staged"
+      "pre-push": "yarn eslint --ext .tsx,.ts ./src"
     }
   },
   "lint-staged": {
