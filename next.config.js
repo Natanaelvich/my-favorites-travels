@@ -1,4 +1,11 @@
-module.exports = {
+const withPWA = require('next-pwa')
+const isProd = process.env.NODE_ENV === 'production'
+
+module.exports = withPWA({
+  pwa : {
+    dest : 'public',
+    disable : !isProd
+  },
   images: {
     domains: ['assets.vercel.com','localhost'],
     deviceSizes: [320, 640, 750, 828, 1080, 1200],
@@ -14,4 +21,4 @@ module.exports = {
 
     return config;
   },
-};
+});
