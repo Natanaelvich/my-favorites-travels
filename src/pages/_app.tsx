@@ -1,7 +1,8 @@
 import AppProvider from '@/hooks';
 import Globalstyles from '@/styles/Globalstyles';
+import { AppProps } from 'next/dist/next-server/lib/router/router';
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <AppProvider>
       <Globalstyles />
@@ -10,4 +11,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default App;
