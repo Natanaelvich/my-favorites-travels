@@ -8,8 +8,8 @@ interface SingnCredencials {
   password: string;
 }
 interface AuthState {
-  token: string;
-  user: User;
+  token: string | null;
+  user: User | null;
 }
 interface User {
   id: string;
@@ -19,7 +19,7 @@ interface User {
 }
 
 interface AuthContextData {
-  user: User;
+  user: User | null;
   signIn(crendencial: SingnCredencials): Promise<void>;
   signOut(): void;
   updateUser(user: User): void;
