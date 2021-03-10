@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render, wait } from '@testing-library/react';
-import { ToastMessage } from '@/hooks/modules/ToastContext';
-import ToastContainer from '@/components/ToastContainer';
+import { ToastMessage } from 'hooks/modules/ToastContext';
+import ToastContainer from 'components/ToastContainer';
 
 const messages: ToastMessage[] = [
   {

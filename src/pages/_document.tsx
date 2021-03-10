@@ -1,9 +1,9 @@
 import Document, {
   DocumentContext,
-  Head,
   Html,
   Main,
   NextScript,
+  Head,
 } from 'next/document';
 
 import { ServerStyleSheet } from 'styled-components';
@@ -37,21 +37,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt">
-        <Head>
-          <meta charSet="utf-8" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap"
-            rel="stylesheet"
-          />
-          <link rel="manifest" href="/manifest.json" />
-          <meta name="theme-color" content="#7159c1" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
-            rel="stylesheet"
-          />
-          <link rel="shortcut icon" href="/favicon.ico" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

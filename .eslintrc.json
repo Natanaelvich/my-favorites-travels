@@ -3,7 +3,7 @@
     "browser": true,
     "es6": true,
     "jest": true,
-    "node" : true
+    "node": true
   },
   "extends": [
     "plugin:react/recommended",
@@ -42,7 +42,16 @@
     "jsx-a11y/anchor-is-valid": "off",
     "react/no-array-index-key": "off",
     "jsx-a11y/label-has-associated-control": "off",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.tsx", "**/*.spec.tsx"]}],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.tsx",
+          "**/*.spec.tsx",
+          "./src/setuptests.ts"
+        ]
+      }
+    ],
     "@typescript-eslint/explicit-function-return-type": [
       "off",
       {

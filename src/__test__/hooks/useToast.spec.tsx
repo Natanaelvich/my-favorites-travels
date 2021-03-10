@@ -2,7 +2,7 @@ import {
   ToastMessage,
   ToastProvider,
   useToast,
-} from '@/hooks/modules/ToastContext';
+} from 'hooks/modules/ToastContext';
 import { renderHook, act } from '@testing-library/react-hooks';
 
 jest.mock('uuid', () => {
