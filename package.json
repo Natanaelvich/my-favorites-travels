@@ -21,6 +21,7 @@
     ]
   },
   "dependencies": {
+    "@styled-icons/evaicons-outline": "^10.18.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "js-cookie": "^2.2.1",
