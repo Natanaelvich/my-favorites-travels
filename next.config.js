@@ -7,8 +7,7 @@ module.exports = withPWA({
     disable : !isProd
   },
   images: {
-    domains: ['assets.vercel.com','localhost'],
-    deviceSizes: [320, 640, 750, 828, 1080, 1200],
+    domains: ['media.graphcms.com']
   },
   webpack(config) {
     config.module.rules.push({
