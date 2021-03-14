@@ -1,14 +1,17 @@
 import AppProvider from 'hooks';
 import Globalstyles from 'styles/Globalstyles';
+import NextNprogress from 'nextjs-progressbar';
+
+import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/dist/next-server/lib/router/router';
 import Head from 'next/head';
+import SEO from '../../next-seo.config';
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>Travel</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap"
           rel="stylesheet"
@@ -29,7 +32,14 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <AppProvider>
+        <DefaultSeo {...SEO} />
         <Globalstyles />
+        <NextNprogress
+          color="#f231a5"
+          startPosition={0.3}
+          stopDelayMs={200}
+          height={3}
+        />
         <Component {...pageProps} />
       </AppProvider>
     </>
