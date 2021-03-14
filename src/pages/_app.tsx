@@ -1,4 +1,3 @@
-import AppProvider from 'hooks';
 import Globalstyles from 'styles/Globalstyles';
 import NextNprogress from 'nextjs-progressbar';
 
@@ -31,17 +30,15 @@ function App({ Component, pageProps }: AppProps) {
         />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <AppProvider>
-        <DefaultSeo {...SEO} />
-        <Globalstyles />
-        <NextNprogress
-          color="#f231a5"
-          startPosition={0.3}
-          stopDelayMs={200}
-          height={3}
-        />
-        <Component {...pageProps} />
-      </AppProvider>
+      <DefaultSeo {...SEO} />
+      <Globalstyles />
+      <NextNprogress
+        color="#f231a5"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height={3}
+      />
+      <Component {...pageProps} />
     </>
   );
 }
