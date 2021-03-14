@@ -11,23 +11,23 @@ export default function HomeTemplate({ places }: MapProps) {
   return (
     <>
       <NextSeo
-        title="Travel"
+        title="My Favorites Travels"
         description="A simple project to show in a map the places that I went and show more informations and photos when clicked."
-        canonical="https://travel.vercel.app"
+        canonical="https://myfavoritetravels.vercel.app"
         openGraph={{
-          url: 'https://travel.vercel.app',
-          title: 'Travel',
+          url: 'https://myfavoritetravels.vercel.app',
+          title: 'My Favorites Travels',
           description:
             'A simple project to show in a map the places that I went and show more informations and photos when clicked.',
           images: [
             {
-              url: 'https://travel.vercel.app/cover.png',
+              url: 'https://myfavoritetravels.vercel.app/cover.png',
               width: 1280,
               height: 720,
-              alt: 'Travel',
+              alt: 'My Favorites Travels',
             },
           ],
-          site_name: 'Travel',
+          site_name: 'My Favorites Travels',
         }}
       />
       <LinkWrapper href="/about">
