@@ -3,7 +3,7 @@ export default {
     type: 'website',
     locale: 'en_US',
     url: 'https://myfavoritetravels.vercel.app',
-    site_name: 'Travel',
+    site_name: 'My Favorites Travels',
   },
   twitter: {
     handle: '@natanaelvich',
