@@ -5,7 +5,8 @@ import L from 'leaflet';
 import * as S from './styles';
 
 const markerIcon = new L.Icon({
-  iconUrl: 'img/icon-192.png',
+  iconUrl:
+    'https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-512.png',
   iconSize: [40, 40],
   iconAnchor: [20, 40],
   popupAnchor: [0, -40],
