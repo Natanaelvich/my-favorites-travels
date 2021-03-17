@@ -46,7 +46,8 @@
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
     "next-seo": "^4.20.0",
-    "nextjs-progressbar": "^0.0.7"
+    "nextjs-progressbar": "^0.0.7",
+    "next-sitemap": "^1.5.10"
   },
   "jest": {
     "collectCoverageFrom": [
