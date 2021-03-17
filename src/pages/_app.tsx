@@ -11,6 +11,10 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta charSet="utf-8" />
+        <meta
+          name="google-site-verification"
+          content="FwURloReOmQ3ApXkA5bt3AHT3hlzLmz63J5cPZUswpo"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap"
           rel="stylesheet"
